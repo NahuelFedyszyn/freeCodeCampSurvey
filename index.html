@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">
+            Nahuel's Survey Form
+        </h1>
+        <p id="description">
+            Thanks for reading this, even if this is worthless :)
+        </p>
+        <div class="form-container">
+            <form id="survey-form">
+                <label id="name-label">Name</label>
+                <input class="input" id="name" type="text" placeholder="Your name here" required> 
+                <label id="email-label">Email</label>
+                <input class="input" id="email" type="email" placeholder="Your email here" required>
+                <label id="number-label">Age</label>
+                <input class="input" id="number" type="number" max="100" min="18" placeholder="Your age here" required>
+                <hr>
+                <label>What's your favourite music genre</label>
+                <select id="dropdown">
+                    <option>Rock</option>
+                    <option>Reggae</option>
+                    <option>Rap/Hip Hop</option>
+                    <option>Classical</option>
+                    <option>Retro</option>
+                    <option>Disco</option>
+                    <option>Pop</option>
+                    <option>Other</option>
+                </select>
+                <hr>
+                <label class="left-label">Do you like this site?</label>
+                <label class="left-label"><input class="radio" type="radio" checked name="radio" value="1"> Yes</label>
+                <label class="left-label"><input class="radio" type="radio" name="radio" value="2"> No</label>
+                <hr>
+                <label class="left-label">What's good about this website?</label>
+                <label class="left-label"><input class="radio" type="checkbox" name="check" value="1"> The colors</label>
+                <label class="left-label"><input class="radio" type="checkbox" name="check" value="2"> The HTML structure</label>
+                <label class="left-label"><input class="radio" type="checkbox" name="check" value="3"> My english ability</label>
+                <hr>
+                <label class="left-label">Observations</label>
+                <textarea draggable="false"></textarea>
+                <hr>
+                <button id="submit">SUBMIT</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
